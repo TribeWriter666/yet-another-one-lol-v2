@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Emoji Animation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <canvas id="canvas"></canvas>
+    <div class="container">
+
+      <! -- TESTING -->
+
+        <div class="emoji-list">
+        </div>
+
+        <! -- TESTING -->
+
+          <div class="select-container">
+            <label class="label">Background Color:</label>
+            <select id="background-color">
+              <option value="white">White</option>
+              <option value="lightgray">Light Gray</ <option value="gray">Gray</option>
+              <option value="darkgray">Dark Gray</option>
+              <option value="red">Red</option>
+              <option value="pink">Pink</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+              <option value="lightblue">Light Blue</option>
+              <option value="blue">Blue</option>
+              <option value="purple">Purple</option>
+              <option value="black">Black</option>
+            </select>
+          </div>
+
+          <div class="toggle-container">
+            <label class="label">Dark Mode:</label>
+            <label class="switch">
+              <input type="checkbox" id="dark-mode-toggle" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+    </div>
+
+    <div class="container">
+      <div class="input-container">
+        <input id="emoji-input" type="text" value="💩">
+      </div>
+      <button id="add-button">Add</button>
+      <button id="animate-button">Animate</button>
+      <button id="remove-last-button">Remove Last</button>
+      <button id="slow-down-button">Slow Down</button>
+      <button id="speed-up-button">Speed Up</button>
+      <button id="screenshot-button">Screenshot</button>
+      <button id="record-button">Record</button>
+    </div>
+  </div>
+  <script src="functions.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
